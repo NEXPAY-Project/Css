@@ -1,0 +1,29 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f3f3f3;
+    font-family: Arial, sans-serif;
+}
+
+.app-container {
+    text-align: center;
+}
+
+.tap-button {
+    width: 100px;
+    height: 100px;
+    background-color: #A020F0; /* Purple */
+    border-radius: 50%;
+    color: #fff;
+    font-size: 16px;
+    line-height: 100px;
+    cursor: pointer;
+    transition: transform 0.1s ease-in-out;
+}
+
+.tap-button:active {
+    transform: scale(0.95);
+    background-color: #800080; /* Darker purple */
+}
