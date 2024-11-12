@@ -1,165 +1,40 @@
-/* General Styles */
 body {
-    margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #f3f3f3;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
+    height: 100vh;
+    margin: 0;
 }
 
-/* Profile Section */
-#profile-section {
-    width: 100%;
-    padding: 10px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #A020F0; /* Purple */
-    color: white;
+.main-ui {
+    text-align: center;
 }
 
-.profile-icon, .wallet-icon {
+.icon {
     width: 40px;
     height: 40px;
 }
 
-.user-info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.profile, .wallet, .level, .tap-feedback, .navigation-buttons {
+    margin: 15px;
 }
 
-#username, #user-id {
-    font-size: 14px;
-}
-
-/* Tap Section */
-#tap-section {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-#tap-feedback {
-    width: 150px;
-    height: 150px;
-    animation: tap-feedback 0.5s ease-in-out;
-}
-
-#tap-logo {
+.tap-logo {
     width: 100px;
     height: 100px;
-    cursor: pointer;
-}
-
-#rank-level {
-    display: flex;
-    align-items: center;
-    margin-top: 20px;
-}
-
-#level-icon {
-    width: 30px;
-    height: 30px;
-    margin-right: 10px;
-}
-
-#level-text {
-    font-size: 16px;
-    font-weight: bold;
-}
-
-/* Navigation Bar */
-#nav-bar {
-    width: 100%;
-    height: 60px;
-    background-color: #A020F0; /* Purple */
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
 }
 
 .nav-button {
-    background: none;
-    border: none;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: inline-block;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
     cursor: pointer;
-    font-size: 12px;
 }
-
 .nav-button img {
-    width: 24px;
-    height: 24px;
+    display: block;
+    margin: 0 auto 5px;
 }
-
-.nav-button span {
-    margin-top: 4px;
-}
-
-/* Leaderboard Section */
-#leaderboard-section {
-    width: 90%;
-    max-width: 400px;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    margin: 20px 0;
-}
-
-#leaderboard-section.hidden {
-    display: none;
-}
-
-#leaderboard-section h2 {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-#leaderboard-list {
-    list-style-type: none;
-    padding: 0;
-}
-
-#leaderboard-list li {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-}
-
-#leaderboard-list li img {
-    width: 24px;
-    height: 24px;
-    margin-right: 10px;
-}
-
-#leaderboard-list li span {
-    flex: 1;
-}
-
-/* Animations */
-@keyframes tap-feedback {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.1); }
-    100% { transform: scale(1); }
-}
-
-/* Responsive Design */
-@media (max-width: 600px) {
-    #nav-bar {
-        height: 50px;
-    }
-    .nav-button img {
-        width: 20px;
-        height: 20px;
-    }
-    .nav-button span {
-        font-size: 10px;
-    }
-    }
